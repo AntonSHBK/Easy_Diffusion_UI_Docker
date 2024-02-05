@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  python-to-cpp:
+  easy_diffusion:
     build:
       context: ../
       dockerfile: ./docker/Dockerfile
