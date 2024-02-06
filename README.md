@@ -1,11 +1,19 @@
-# Stable_Diffusion_UI_Docker
-[Установка](https://github.com/easydiffusion/easydiffusion?tab=readme-ov-file#installation)
-
+# Easy_Diffusion_UI_Docker
+[Install documentation Easy-Diffusion](https://github.com/easydiffusion/easydiffusion?tab=readme-ov-file#installation)
+Install:
 ```bush
-bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh) -f
-wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.ckpt
+docker-compose up --build
 ```
-Примечание: Библиотека Xformers предоставляет дополнительный метод для ускорения генерации изображений:
+
+Running:
 ```bush
-./webui.sh --xformers
+docker ps
+docker exec -it stable_diffusion_ui_docker-easy_diffusion-1 bush
+```
+where `stable_diffusion_ui_docker-easy_diffusion-1` name container in docker.
+
+Run UI:
+```bush
+cd /app/easy-diffusion
+./start.sh
 ```
